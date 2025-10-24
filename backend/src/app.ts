@@ -7,7 +7,6 @@ import uploadRouter from "./routes/upload";
 dotenv.config();
 
 const app = express();
-const PORT = 3001;
 
 app.use(morgan("dev"));
 app.use(express.json());
@@ -24,6 +23,4 @@ app.get("/", (_req, res) => {
   );
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`);
-});
+export default app;
