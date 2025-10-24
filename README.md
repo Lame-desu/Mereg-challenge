@@ -26,14 +26,19 @@ A high-performance backend and frontend system for processing **large CSV files*
 ```bash
 cd backend
 npm install
+```
 
 2️⃣ Run the server
+```bash
 npm run dev
+```
 Server runs on http://localhost:3001.
 
 🧪 Backend Testing
 Run tests
+```bash
 npm test
+```
 
 Expected output
  PASS  tests/upload.test.ts
@@ -81,13 +86,18 @@ Updating aggregation map	O(1) per row	Constant-time map update
 Writing result CSV	O(D)	D = number of unique departments
 Total Time	O(N)	
 Memory	O(D) — only unique department names are stored	
+
 💻 Frontend Setup (Next.js + Tailwind)
 1️⃣ Install dependencies
+```bash
 cd frontend
 npm install
+```
 
 2️⃣ Run the app
+```bash
 npm run dev
+```
 The frontend runs on http://localhost:3000.
 Make sure your backend is also running (http://localhost:3001).
 
