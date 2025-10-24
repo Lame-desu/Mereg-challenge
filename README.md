@@ -65,13 +65,17 @@ Respond with a downloadable link to the generated file.
 Example:
 
 Input
+```bash
 New York,2024-01-01,100
 Boston,2024-01-01,50
 New York,2024-01-01,30
+```
 
 Output
+```bash
 New York,130
 Boston,50
+```
 
 🧠 Memory Efficiency Strategy
 The system never loads the full CSV file into memory.
@@ -111,7 +115,7 @@ Displays a download link once processing is complete
 🧩 Example Testing File
 
 You can test with the following CSV (test-sales.csv):
-
+```bash
 New York,2024-01-01,100
 Boston,2024-01-01,50
 New York,2024-01-01,30
@@ -132,15 +136,16 @@ Houston,2024-01-11,120
 Chicago,2024-01-11,30
 New York,2024-01-12,60
 Los Angeles,2024-01-12,90
-
+```
 
 Expected Output:
-
+```bash
 New York,410
 Boston,350
 Chicago,200
 Los Angeles,510
 Houston,270
+```
 
 🧰 Technologies Used
 Backend
